@@ -27,6 +27,10 @@ if (password_verify($_POST['password'], $row['password'])) {
   echo '名前＝[';
   echo $row['content'];
   echo ']';
+
+  echo "<a href=\"../ToDo/todo.php\">ToDo</a><br/>";
+
+
 } else {
   echo 'メールアドレス又はパスワードが間違っています。';
   return false;
